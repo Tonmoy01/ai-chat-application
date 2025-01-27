@@ -1,6 +1,6 @@
 import { revalidatePath } from 'next/cache';
 
-export async function submitMessage(prevState: any, formData: FormData) {
+export async function submitMessage(formData: FormData) {
   const message = formData.get('message') as string;
 
   if (!message?.trim()) {
