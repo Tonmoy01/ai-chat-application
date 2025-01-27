@@ -1,5 +1,3 @@
-'use server';
-
 import { revalidatePath } from 'next/cache';
 
 export async function submitMessage(prevState: any, formData: FormData) {
